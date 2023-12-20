@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 
 
+
 }
 
 
@@ -39,7 +40,7 @@ header section ul {
 	list-style: none;
 }
 
-.frase h3{
+.frase h3 {
 	text-align: center;
 }
 
@@ -47,22 +48,28 @@ header section ul {
 
 
 /*------NAVEGACION------!*/
-.container-fluid{
+.container-fluid {
+	background: #ff8d21;
+	padding: 0%;
+}
+
+nav {
 	background: #ff8d21;
 }
+
 /*¡------ MAIN ------!*/
 
-.Novedades-y-Ofertas{
+.Novedades-y-Ofertas {
 	background: #ff8d21;
 }
 
 
 h2 {
 	text-align: center;
-	
+
 }
 
-.grid-destacados{
+.grid-destacados {
 	text-align: center;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 280px);
@@ -71,17 +78,27 @@ h2 {
 	font-family: 'Open sans';
 	font-weight: 700;
 	position: relative;
-	
-
-}
-.productos-destacados{
-background: #ffa652;
+	justify-content: center;
+	padding: 3%;
+	background: #ffa652;
 }
 
-.Busquedas-Relacionadas{
+.seccion-articulos {
+	background: #ffa652;
+	padding: 0%;
+}
+
+.productos-destacados {
+	background: #ffa652;
+	padding: 2%;
+}
+
+.Busquedas-Relacionadas {
 	background: #ffb76b;
+	padding: 2%;
 }
-.producto{
+
+.producto {
 	max-width: 280px;
 	display: flex;
 	flex-flow: column;
@@ -92,56 +109,110 @@ background: #ffa652;
 	transition-property: bow shador;
 	transition-duration: 0.3s;
 }
-.producto:hover{
-	box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);;
+
+.producto:hover {
+	box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);
+	;
 }
 
-.producto > img{
+.producto>img {
 	width: 100%;
 	object-fit: cover;
 }
 
-.informacion{
-	border-top: 1px solid 
-	rgb(230,230,230);
+.informacion {
+	border-top: 1px solid rgb(230, 230, 230);
 	padding: 1em;
 	display: flex;
 	flex-flow: column;
 
 }
 
-.informacion * + *{
+.informacion *+* {
 	margin-bottom: 0.5em;
 }
 
-.precio{
+.precio {
 	color: black;
 }
 
-.descripcion{
+.descripcion {
 	font-weight: 300;
 	font-size: 0.9em;
 }
 
-.flex-relacionadas{
+.flex-relacionadas {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	position: relative;
+	padding: 3%;
 }
 
-.flex{
+.flex {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	margin-top: 20px;
 	background: #ffcd90;
+	padding: 3%;
+	margin: 0;
 }
 
-iframe{
+form {
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+form li+li {
+	margin-top: 1%
+}
+
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+input,
+textarea {
+	font: 'Open sans';
+	width: 300px;
+	box-sizing: border-box;
+	border: 1px solid #ff7b00;
+}
+
+
+textarea {
+	vertical-align: top;
+	height: 5em;
+}
+
+.button {
+	padding-left: 90px;
+	list-style: none;
+}
+
+button {
+	margin-left: 1%
+}
+
+button:hover {
+	color: #ff7b00;
+}
+
+iframe {
 	width: 60%;
 	height: 300px;
-	margin-right: 15px;
+	margin-right: 20px;
 }
 
 
@@ -155,62 +226,56 @@ iframe{
 
 
 /*¡------ FOOTER ------!*/
-footer{
- display: flex;
- justify-content: space-between;
- align-items: center;
- background-color: black;
- background: #fff4df;
-
-
-}
-
-.flex-informacion{
-text-decoration: none;
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	background: #fff4df;
 }
 
 
-.flex-siguenos{
+
+.flex-siguenos {
 	margin: 20px;
-}
-footer ol li{
-	list-style: none;
-	text-decoration: none;
-	
+	padding: 2%;
 }
 
+footer ol li {
+	list-style: none;
+}
+
+footer section ol li a {
+	text-decoration: none;
+	color: black
+}
+
+footer section ol li a:hover {
+	color: #ff8d21
+}
+
+/*!CONTACTANENOS*/
+.contactenos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 
 
 
 
 /*!---MEDIA QUERY---*/
-@media screen and (max-width: 863px) {
-	.flex-relacionadas{
-		display: grid;
-		grid-template-columns: repeat(1,1fr);
-		grid-template-rows: 1fr;
-		gap:10px
-	}
-	
-} 
-@media screen and (max-width:350px) {
-	.flex{
-		display: grid;
-		grid-template-columns: repeat(1,1fr);
-		grid-template-rows: 1fr;
-		
-	}
-}
-@media screen and (max-width:440px) {
+@media screen and (max-width:450px){
 	.mini-logos{
 		display: grid;
 	}
-	
-}
-@media screen and (max-width:351px){
-.flex{
-	display: grid;
-	grid-template-columns: repeat(1,1fr);
-	grid-template-rows: 1fr;
-}	
+	.flex-relacionadas{
+		display: grid;
+	}
+	.flex{
+		display: flex;
+		flex-direction: column;
+	}
+
 }
