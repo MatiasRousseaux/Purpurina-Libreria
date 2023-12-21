@@ -30,22 +30,11 @@ header section ul li {
 
 }
 
-header .buscador {
-	position: absolute;
-	left: 48%;
-}
 
 header section ul {
 	display: flex;
 	list-style: none;
 }
-
-.frase h3 {
-	text-align: center;
-}
-
-
-
 
 /*------NAVEGACION------!*/
 .container-fluid {
@@ -58,6 +47,9 @@ nav {
 }
 
 /*¡------ MAIN ------!*/
+.seccion-articulos{
+	background: #ff8d21;
+}
 
 .Novedades-y-Ofertas {
 	background: #ff8d21;
@@ -81,11 +73,6 @@ h2 {
 	justify-content: center;
 	padding: 3%;
 	background: #ffa652;
-}
-
-.seccion-articulos {
-	background: #ffa652;
-	padding: 0%;
 }
 
 .productos-destacados {
@@ -112,7 +99,7 @@ h2 {
 
 .producto:hover {
 	box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);
-	;
+
 }
 
 .producto>img {
@@ -215,6 +202,19 @@ iframe {
 	margin-right: 20px;
 }
 
+.contactenos{
+	padding: 5%;
+	margin: 0;
+	
+}
+
+.registro{
+	margin:5px;
+}
+
+.registrarse:hover{
+	background-color: #ff7b00;
+}
 
 
 
@@ -254,7 +254,7 @@ footer section ol li a:hover {
 	color: #ff8d21
 }
 
-/*!CONTACTANENOS*/
+/*!CONTACTENOS*/
 .contactenos{
 	display: flex;
 	justify-content: center;
@@ -276,6 +276,9 @@ footer section ol li a:hover {
 	.flex{
 		display: flex;
 		flex-direction: column;
+	}
+	.carousel{
+		visibility: hidden;
 	}
 
 }
