@@ -277,8 +277,5 @@ footer section ol li a:hover {
 		display: flex;
 		flex-direction: column;
 	}
-	.carousel-tarjeta{
-		visibility: hidden;
-	}
 
 }
