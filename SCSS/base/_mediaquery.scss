@@ -2,6 +2,9 @@
 @media screen and (max-width:450px){
     header{
         .encabezado{
+            .carrusel-promo{
+		        visibility: hidden;
+	}
             .mini-logos{
                 display: grid;
             }

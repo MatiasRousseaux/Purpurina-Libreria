@@ -278,4 +278,8 @@ footer section ol li a:hover {
 		flex-direction: column;
 	}
 
+	.carrusel-promo{
+		visibility: hidden;
+	}
+
 }
