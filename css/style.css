@@ -267,8 +267,21 @@ footer section ol li a:hover {
 
 /*!---MEDIA QUERY---*/
 @media screen and (max-width:450px){
+	body{
+		margin: 0px;
+		;
+	}
+	main{
+		overflow-x: hidden;
+	}
+	.encabezado{
+		display: flex;
+		flex-direction: column-reverse;
+
+	}
 	.mini-logos{
-		display: grid;
+		display: none
+
 	}
 	.flex-relacionadas{
 		display: grid;
@@ -276,10 +289,47 @@ footer section ol li a:hover {
 	.flex{
 		display: flex;
 		flex-direction: column;
+		width: auto;
+		height: auto;
+	}
+	ul{
+		width: auto;
+		height: auto;
 	}
 
 	.carrusel-promo{
-		visibility: hidden;
+		align-content: start;
+	}
+	.d-flex{
+		padding: 18%;
+		height: auto;
+		width: auto;
 	}
 
+	.grid-destacados{
+		display: grid;
+		grid-template-columns: repeat(2,2fr) ;
+		grid-template-rows: 1fr ; 
+		justify-content: center;
+		gap: 1em;
+		padding: 10%;
+	}
+    .flex-relacionadas{
+		display: grid;
+		grid-template-columns: repeat(2,2fr) ;
+		grid-template-rows: 1fr ; 
+		justify-content: center;
+		gap: 1em;
+		padding: 10%;
+	}
+	footer{
+		display: inline-block;
+	}
+	.flex-copy{
+	padding:5%;
+	text-align: center;
+    }
+	.flex-siguenos{
+		display: none;
+	}
 }

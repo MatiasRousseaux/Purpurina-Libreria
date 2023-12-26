@@ -22,12 +22,8 @@ header .encabezado {
     margin: 10px;
     display: flex;
     list-style: none; }
-    header .encabezado .mini-logos ul {
-      margin: 10px;
-      display: flex;
-      list-style: none; }
-      header .encabezado .mini-logos ul li {
-        margin: 10px; }
+    header .encabezado .mini-logos li {
+      margin: 10px; }
 
 /*! NAV */
 nav {
