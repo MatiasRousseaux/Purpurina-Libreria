@@ -267,44 +267,40 @@ footer section ol li a:hover {
 
 /*!---MEDIA QUERY---*/
 @media screen and (max-width:450px){
-	body{
-		margin: 0px;
-		;
-	}
 	main{
 		overflow-x: hidden;
-	}
+	} 
 	.encabezado{
 		display: flex;
 		flex-direction: column-reverse;
 
-	}
+	} 
 	.mini-logos{
 		display: none
 
-	}
+	} 
 	.flex-relacionadas{
 		display: grid;
-	}
+	} 
 	.flex{
 		display: flex;
 		flex-direction: column;
 		width: auto;
 		height: auto;
-	}
+	} 
 	ul{
 		width: auto;
 		height: auto;
-	}
+	} 
 
 	.carrusel-promo{
 		align-content: start;
-	}
+	} 
 	.d-flex{
 		padding: 18%;
 		height: auto;
 		width: auto;
-	}
+	} 
 
 	.grid-destacados{
 		display: grid;
@@ -313,7 +309,7 @@ footer section ol li a:hover {
 		justify-content: center;
 		gap: 1em;
 		padding: 10%;
-	}
+	} 
     .flex-relacionadas{
 		display: grid;
 		grid-template-columns: repeat(2,2fr) ;
@@ -321,7 +317,7 @@ footer section ol li a:hover {
 		justify-content: center;
 		gap: 1em;
 		padding: 10%;
-	}
+	} 
 	footer{
 		display: inline-block;
 	}
@@ -333,3 +329,5 @@ footer section ol li a:hover {
 		display: none;
 	}
 }
+
+
