@@ -268,6 +268,9 @@ footer section ol li a:hover {
 
 /*!---MEDIA QUERY---*/
 @media screen and (max-width:450px){
+	body{
+		width: 100%;
+	}
 	main{
 		overflow-x: hidden;
 	} 
@@ -321,6 +324,7 @@ footer section ol li a:hover {
 	} 
 	footer{
 		display: inline-block;
+		width: 100%;
 	}
 	.flex-copy{
 	padding:5%;
@@ -329,6 +333,25 @@ footer section ol li a:hover {
 	.flex-siguenos{
 		display: none;
 	}
+	.navbar-mobile{
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 60px;
+		z-index: 1001;
+		text-align: center;
+		box-shadow: 0 0 10px rgba(0,0,0,.15);
+	}
+	.list-mobile{
+		background: #ff7b00;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		padding: 20px;
+	}
+
 }
 
 
