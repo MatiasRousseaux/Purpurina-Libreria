@@ -1,0 +1,182 @@
+main{
+    .Novedades-y-Ofertas{
+        background:$color-2;
+        h2{
+            text-align: center;
+        }
+        
+    }
+    .productos-destacados{
+        background:$color-3;
+        padding: 2%;
+        h2{
+            text-align: center;
+        }
+        .grid-destacados{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-template-rows: 1fr;
+            gap: 1em;
+            font-family: 'Open sans';
+            font-weight: 700;
+            position: relative;
+            justify-content: center;
+            padding: 3%;
+            background: $color-3;
+            .producto:hover {
+                box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);
+            
+            } 
+            .producto{
+                max-width: 280px;
+                display: flex;
+                flex-flow: column;
+                border-radius: 6px;
+                box-shadow: 0 0 0.1em rgb( 0, 0, 0.2);
+                background-color:#ffff;
+                cursor: pointer;
+                transition-property:bow shador;
+                transition-duration: 0.3s;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .informacion *+* {
+                    margin-bottom: 0.5em;
+                } 
+                .informacion{
+                    border-top: 1px solid rgb(230, 230, 230);
+                    padding: 1em;
+                    display: flex;
+                    flex-flow: column;
+                    .precio{
+                        color: $color-7;
+                    }
+                    .descripcion{
+                        font-weight: 300;
+                        font-size: 0.9em;
+                    }
+                    .comprar{
+
+                    }
+                }
+            }
+        }
+
+    }
+    .Busquedas-Relacionadas{
+        background:$color-4;
+        padding: 2%;
+        h2{
+            text-align: center;
+        }
+        .flex-relacionadas{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            padding: 3%;
+            .producto:hover {
+                box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);
+            
+            } 
+            .producto{
+                max-width: 280px;
+                display: flex;
+                flex-flow: column;
+                border-radius: 6px;
+                box-shadow: 0 0 0.1em rgb( 0, 0, 0.2);
+                background-color: hwb(0 100% 0%);
+                cursor: pointer;
+                transition-property:bow shador;
+                transition-duration: 0.3s;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .informacion *+* {
+                    margin-bottom: 0.5em;
+                } 
+                .informacion{
+                    border-top: 1px solid rgb(230, 230, 230);
+                    padding: 1em;
+                    display: flex;
+                    flex-flow: column;
+                    .precio{
+                        color: $color-7;
+                    }
+                    .descripcion{
+                        font-weight: 300;
+                        font-size: 0.9em;
+                    }
+                    .comprar{
+
+                    }
+                }
+            }
+        }
+
+    }
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        background:$color-5;
+        padding: 3%;
+        margin: 0;
+        h2{
+            text-align: center;
+        }
+        .formulario-mensaje{
+            form{
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                border-radius: 1em;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        label{
+                            display: inline-block;
+                            width: 90px;
+                            text-align: right;
+                        }
+                        input{
+                            font: 'Open sans';
+                            width: 300px;
+                            box-sizing: border-box;
+                            border: 1px solid $color-1;
+                        }
+                        textarea{
+                            font: 'Open sans';
+                            width: 300px;
+                            box-sizing: border-box;
+                            border: 1px solid $color-1;
+                            vertical-align: top;
+                            height: 5em;
+                        }
+                    }
+                }
+                .button{
+                    padding-left: 90px;
+                    list-style: none;
+                    margin: 5px;
+                    button{
+                        padding: 2px;
+                        margin-left: 1%
+                    }
+                }
+            }
+        }
+        iframe{
+            width: 60%;
+            height: 300px;
+            margin-right: 20px;
+        }
+
+    }
+}

@@ -4,10 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Purpurina Parana</title>
+    <!---FAVICON-->
+    <link rel="shortcut icon" href="./img/letra-p.png" type="image/x-icon">
+    <!--KEYWORDS-->
+    <meta name="keywords"
+        content="Libreria y Jugueteria">
+    <!--DESCRIPTION-->
+    <meta name="description"
+        content="Libreria y Jugueteria ubicada en la ciudad de Paraná, provincias unidas 618">
+    <!--OPEN GRAPH-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Libreria y Jugueteria, Parana, Entre Rios">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Libreria y Jugueteria ubicada en la ciudad de Paraná, provincias unidas 618">
+    <title>Purpurina Parana</title> 
 </head>
 
 <body>
@@ -17,6 +32,7 @@
 
             <div class="logo">
                 <a href="./index.html"><img src="./img/logo-purpurina2.jpg" width="200" height="200" alt="Logo"></a>
+                <h1>Libreria y Jugueteria</h1>
             </div>
             <span class="carrusel-promo">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -31,11 +47,12 @@
                 </div>
             </span>
             <ul class="mini-logos">
-                <li><a href="https://wa.me/__543434045878"><img src="./img/boton-web-de-ayuda.png" width="45"
-                            height="45" alt="Ayuda"></a></li>
-                <li><a href="./pages/mi-pedido.html"><img src="./img/carrito-de-compras.png" width="45" height="45"
+                <li><a href="./index.html"><img src="./img/hogar.png" width="35" height="35" alt=""></a></li>
+                <li><a href="https://wa.me/__543434045878"><img src="./img/boton-web-de-ayuda.png" width="35"
+                            height="35" alt="Ayuda"></a></li>
+                <li><a href="./pages/mi-pedido.html"><img src="./img/carrito-de-compras.png" width="35" height="35"
                             alt="Mi Pedido"></a></li>
-                <li><a href="./pages/cuenta.html"><img src="./img/usuario.png" width="45" height="45"
+                <li><a href="./pages/cuenta.html"><img src="./img/usuario.png" width="35" height="35"
                             alt="Mi Cuenta"></a></li>
             </ul>
         </section>
@@ -255,26 +272,26 @@
         <section class="flex">
             <h2>Hace Tu Pedido!</h2>
             <span class="formulario-mensaje">
-            <form action="page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="user_name" />
+                <form action="page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">Correo electrónico:</label>
+                            <input type="email" id="mail" name="user_mail" />
+                        </li>
+                        <li>
+                            <label for="msg">Mensaje:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                    </ul>
+                    <li class="button">
+                        <button type="submit">Envíe su mensaje</button>
                     </li>
-                    <li>
-                        <label for="mail">Correo electrónico:</label>
-                        <input type="email" id="mail" name="user_mail" />
-                    </li>
-                    <li>
-                        <label for="msg">Mensaje:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                </ul>
-                <li class="button">
-                    <button type="submit">Envíe su mensaje</button>
-                </li>
-            </form>
-        </span>
+                </form>
+            </span>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.455464205911!2d-60.51515652459267!3d-31.75806121285149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44dc337cd6a4f%3A0x61a6f2def05c5d31!2sPurpurina%20librer%C3%ADa!5e0!3m2!1ses!2ses!4v1701818050132!5m2!1ses!2ses"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -282,10 +299,12 @@
             </iframe>
         </section>
 
-
-
-
         
+
+
+
+
+
     </main>
 
 
@@ -326,13 +345,15 @@
             <ul class="list-mobile">
                 <ol class="item-mobile">
                     <a href=""><img src="./img/whatsapp.png" width="25" height="25" alt="Ayuda"></a>
-                    
+
                 </ol>
                 <ol class="item-mobile">
-                    <a href="./pages/mi-pedido.html"><img src="./img/carrito-de-compras.png" width="25" height="25" alt="Mi pedido"></a>
+                    <a href="./pages/mi-pedido.html"><img src="./img/carrito-de-compras.png" width="25" height="25"
+                            alt="Mi pedido"></a>
                 </ol>
                 <ol class="item-mobile">
-                    <a href="./pages/cuenta.html"><img src="./img/usuario.png" width="25" height="25" alt="Mi cuenta"></a>
+                    <a href="./pages/cuenta.html"><img src="./img/usuario.png" width="25" height="25"
+                            alt="Mi cuenta"></a>
                 </ol>
             </ul>
         </section>
@@ -344,4 +365,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>   
+</html>

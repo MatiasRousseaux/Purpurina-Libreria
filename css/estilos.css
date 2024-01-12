@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*-- VARIABLES DE COLORES --*/
 /*¡------ RESET ------*/
 * {
   margin: 0;
@@ -10,7 +11,25 @@
   font-family: 'Open sans';
   box-sizing: border-box; }
 
-/*! HEADER */
+/*ESTILOS APLICADOS A NAVBAR BOOTSTRAP*/
+nav {
+  background: #ff8d21; }
+  nav .container-fluid {
+    background: #ff8d21;
+    padding: 0%; }
+    nav .container-fluid form {
+      margin: 1%; }
+      nav .container-fluid form input {
+        width: 100%;
+        padding: auto; }
+      nav .container-fluid form button {
+        padding: 5%; }
+
+/*ESTILOS APLICADOS EN TODOS LOS H2 DEL PROYECTO*/
+h2 {
+  text-align: center; }
+
+/*HEADER*/
 header .encabezado {
   display: flex;
   justify-content: space-between;
@@ -18,21 +37,16 @@ header .encabezado {
   padding: 10px;
   background: #ff7b00;
   line-height: 0; }
+  header .encabezado .logo h1 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
   header .encabezado .mini-logos {
-    margin: 10px;
     display: flex;
     list-style: none; }
     header .encabezado .mini-logos li {
       margin: 10px; }
 
-/*! NAV */
-nav {
-  background: #ff8d21; }
-  nav .container-fluid {
-    background: #ff8d21;
-    padding: 0%; }
-
-/*! MAIN */
 main .Novedades-y-Ofertas {
   background: #ff8d21; }
   main .Novedades-y-Ofertas h2 {
@@ -55,28 +69,30 @@ main .productos-destacados {
     justify-content: center;
     padding: 3%;
     background: #ffa652; }
+    main .productos-destacados .grid-destacados .producto:hover {
+      box-shadow: 0 0 0 1em rgba(186, 23, 23, 0.2); }
     main .productos-destacados .grid-destacados .producto {
       max-width: 280px;
       display: flex;
       flex-flow: column;
       border-radius: 6px;
-      background-color: white;
+      box-shadow: 0 0 0.1em black;
+      background-color: #ffff;
       cursor: pointer;
       transition-property: bow shador;
       transition-duration: 0.3s; }
-      main .productos-destacados .grid-destacados .producto .producto:hover {
-        box-shadow: 0 0 0 1em rgba(186, 23, 23, 0.2); }
       main .productos-destacados .grid-destacados .producto img {
         width: 100%;
         object-fit: cover; }
+      main .productos-destacados .grid-destacados .producto .informacion * + * {
+        margin-bottom: 0.5em; }
       main .productos-destacados .grid-destacados .producto .informacion {
         border-top: 1px solid #e6e6e6;
         padding: 1em;
         display: flex;
-        flex-flow: column;
-        margin-bottom: o 0.5em; }
+        flex-flow: column; }
         main .productos-destacados .grid-destacados .producto .informacion .precio {
-          color: black; }
+          color: #0000; }
         main .productos-destacados .grid-destacados .producto .informacion .descripcion {
           font-weight: 300;
           font-size: 0.9em; }
@@ -86,29 +102,39 @@ main .Busquedas-Relacionadas {
   padding: 2%; }
   main .Busquedas-Relacionadas h2 {
     text-align: center; }
-  main .Busquedas-Relacionadas .flex-relacionadas .producto {
-    max-width: 280px;
+  main .Busquedas-Relacionadas .flex-relacionadas {
     display: flex;
-    flex-flow: column;
-    border-radius: 6px;
-    box-shadow: 0 0 0.1em black;
-    background-color: white;
-    cursor: pointer;
-    transition-property: bow shador;
-    transition-duration: 0.3s; }
-    main .Busquedas-Relacionadas .flex-relacionadas .producto img {
-      width: 100%;
-      object-fit: cover; }
-    main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion {
-      border-top: 1px solid #e6e6e6;
-      padding: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding: 3%; }
+    main .Busquedas-Relacionadas .flex-relacionadas .producto:hover {
+      box-shadow: 0 0 0 1em rgba(186, 23, 23, 0.2); }
+    main .Busquedas-Relacionadas .flex-relacionadas .producto {
+      max-width: 280px;
       display: flex;
-      flex-flow: column; }
-      main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion .precio {
-        color: black; }
-      main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion .descripcion {
-        font-weight: 300;
-        font-size: 0.9em; }
+      flex-flow: column;
+      border-radius: 6px;
+      box-shadow: 0 0 0.1em black;
+      background-color: hwb(0 100% 0%);
+      cursor: pointer;
+      transition-property: bow shador;
+      transition-duration: 0.3s; }
+      main .Busquedas-Relacionadas .flex-relacionadas .producto img {
+        width: 100%;
+        object-fit: cover; }
+      main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion * + * {
+        margin-bottom: 0.5em; }
+      main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion {
+        border-top: 1px solid #e6e6e6;
+        padding: 1em;
+        display: flex;
+        flex-flow: column; }
+        main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion .precio {
+          color: #0000; }
+        main .Busquedas-Relacionadas .flex-relacionadas .producto .informacion .descripcion {
+          font-weight: 300;
+          font-size: 0.9em; }
 
 main .flex {
   display: flex;
@@ -118,53 +144,232 @@ main .flex {
   background: #ffcd90;
   padding: 3%;
   margin: 0; }
-  main .flex form {
+  main .flex h2 {
+    text-align: center; }
+  main .flex .formulario-mensaje form {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
     border-radius: 1em; }
-    main .flex form ul {
+    main .flex .formulario-mensaje form ul {
       list-style: none;
       padding: 0;
       margin: 0; }
-      main .flex form ul li {
-        margin-top: 1%; }
-        main .flex form ul li label {
-          display: inline-block;
-          width: 90px;
-          text-align: right; }
-        main .flex form ul li input {
-          font: 'Open sans';
-          width: 300px;
-          box-sizing: border-box;
-          border: 1px solid #ff7b00; }
-        main .flex form ul li textarea {
-          font: 'Open sans';
-          width: 300px;
-          box-sizing: border-box;
-          border: 1px solid #ff7b00; }
-      main .flex form ul .button {
-        padding-left: 90px;
-        list-style: none; }
-        main .flex form ul .button button {
-          margin-left: 1%; }
+      main .flex .formulario-mensaje form ul li label {
+        display: inline-block;
+        width: 90px;
+        text-align: right; }
+      main .flex .formulario-mensaje form ul li input {
+        font: 'Open sans';
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #ff7b00; }
+      main .flex .formulario-mensaje form ul li textarea {
+        font: 'Open sans';
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #ff7b00;
+        vertical-align: top;
+        height: 5em; }
+    main .flex .formulario-mensaje form .button {
+      padding-left: 90px;
+      list-style: none;
+      margin: 5px; }
+      main .flex .formulario-mensaje form .button button {
+        padding: 2px;
+        margin-left: 1%; }
   main .flex iframe {
     width: 60%;
     height: 300px;
     margin-right: 20px; }
 
-/*!FOOTER*/
-.flex-footer {
+/*UN SOLO ESTILO DE MAIN PARA TODAS LAS PAGINAS DONDE SE CARGAN PRODUCTOS*/
+.seccion-articulos {
+  background: #ffb76b;
+  padding: 2%; }
+  .seccion-articulos h2 {
+    text-align: center; }
+  .seccion-articulos .grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr;
+    align-items: center;
+    position: relative;
+    padding: 3%;
+    margin: 10px;
+    gap: 1em; }
+    .seccion-articulos .grid-destacados .producto:hover {
+      box-shadow: 0 0 0 1em rgba(186, 23, 23, 0.2); }
+    .seccion-articulos .grid-destacados .producto {
+      max-width: 280px;
+      display: flex;
+      flex-flow: column;
+      border-radius: 6px;
+      box-shadow: 0 0 0.1em black;
+      background-color: hwb(0 100% 0%);
+      cursor: pointer;
+      transition-property: bow shador;
+      transition-duration: 0.3s; }
+      .seccion-articulos .grid-destacados .producto img {
+        width: 100%;
+        object-fit: cover; }
+      .seccion-articulos .grid-destacados .producto .informacion * + * {
+        margin-bottom: 0.5em; }
+      .seccion-articulos .grid-destacados .producto .informacion {
+        border-top: 1px solid #e6e6e6;
+        padding: 1em;
+        display: flex;
+        flex-flow: column; }
+        .seccion-articulos .grid-destacados .producto .informacion .precio {
+          color: black; }
+        .seccion-articulos .grid-destacados .producto .informacion .descripcion {
+          font-weight: 300;
+          font-size: 0.9em; }
+
+/*CONTACTENOS*/
+main {
+  background: #ff8d21; }
+  main .contactenos {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    main .contactenos .contactenos input {
+      width: auto;
+      padding: 5px;
+      margin: 5px; }
+
+/*PREGUNTAS FRECUENTES*/
+main ul .pregunta-frecuente {
+  font-size: 20%; }
+
+/*CUENTA*/
+main {
+  background: #ff8d21; }
+  main .cuenta {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    main .cuenta input {
+      width: auto;
+      padding: 5px;
+      margin: 5px; }
+
+/*LIBRO DE QUEJAS*/
+main {
+  background: #ff8d21; }
+  main .libro {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    main .libro input {
+      width: auto;
+      padding: 5px;
+      margin: 5px; }
+
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: black;
   background: #fff4df; }
-  .flex-footer .flex-informacion ol li {
-    list-style: none; }
-    .flex-footer .flex-informacion ol li a {
-      text-decoration: none;
-      color: black; }
-  .flex-footer .flex-siguenos {
+  footer .flex-informacion {
+    margin: 50px; }
+    footer .flex-informacion ol li {
+      list-style: none; }
+      footer .flex-informacion ol li a:hover {
+        color: #ff8d21; }
+      footer .flex-informacion ol li a {
+        text-decoration: none;
+        color: black; }
+  footer .flex-siguenos {
     margin: 20px;
     padding: 2%; }
+  footer .navbar-mobile {
+    visibility: hidden; }
+
+/*MEDIA QUERIES APLICADAS PARA VISTA MOBILE*/
+@media screen and (max-width: 450px) {
+  header .encabezado {
+    display: flex;
+    flex-direction: column-reverse; }
+    header .encabezado .carrusel-promo {
+      align-content: start; }
+  header .mini-logos li {
+    display: none; }
+  nav .container-fluid {
+    padding: 10px; }
+    nav .container-fluid div .d-flex {
+      padding: 18%;
+      height: auto;
+      width: auto; }
+  main {
+    overflow-x: hidden; }
+    main .productos-destacados .grid-destacados {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: 1fr;
+      justify-content: center;
+      gap: 1em;
+      padding: 10%; }
+    main .Busquedas-Relacionadas .flex-relacionadas {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: 1fr;
+      justify-content: center;
+      gap: 1em;
+      padding: 10%; }
+    main .flex {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      padding-left: 5%; }
+      main .flex .formulario-mensaje form ul {
+        width: auto;
+        height: auto; }
+  footer {
+    display: inline-block;
+    width: 100%; }
+    footer .flex-copy {
+      padding: 5%;
+      text-align: center; }
+    footer .flex-siguenos {
+      display: none; } }
+
+/*MQ APLICADA A LAS DIFERENTES SECCION CON PRODUCTOS*/
+@media screen and (max-width: 450px) {
+  .seccion-articulos .grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 1em;
+    padding: 10%; } }
+
+/*MQ APLICADA A NAVBAR FIJA PIE DE PAGINA*/
+@media screen and (max-width: 450px) {
+  main .navbar-mobile {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    z-index: 1001;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+    main .navbar-mobile ul {
+      background: #ff7b00;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 20px; } }

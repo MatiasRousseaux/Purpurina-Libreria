@@ -23,43 +23,43 @@ header .encabezado {
 	padding: 10px;
 	background: #ff7b00;
 	line-height: 0;
-}
+}   xxxx
 
 header section ul li {
 	margin: 10px;
 
-}
+} xxxx
 
 
 header section ul {
 	display: flex;
 	list-style: none;
-}
+} xxxx
 
 /*------NAVEGACION------!*/
 .container-fluid {
 	background: #ff8d21;
 	padding: 0%;
-}
+} xxxx
 
 nav {
 	background: #ff8d21;
-}
+} xxxx
 
 /*¡------ MAIN ------!*/
 .seccion-articulos{
 	background: #ff8d21;
-}
+} x
 
 .Novedades-y-Ofertas {
 	background: #ff8d21;
-}
+} x
 
 
 h2 {
 	text-align: center;
 
-}
+} x
 
 .grid-destacados {
 	text-align: center;
@@ -73,17 +73,17 @@ h2 {
 	justify-content: center;
 	padding: 3%;
 	background: #ffa652;
-}
+} x
 
 .productos-destacados {
 	background: #ffa652;
 	padding: 2%;
-}
+} x
 
 .Busquedas-Relacionadas {
 	background: #ffb76b;
 	padding: 2%;
-}
+} x
 
 .producto {
 	max-width: 280px;
@@ -93,19 +93,19 @@ h2 {
 	box-shadow: 0 0 0.1em rgb(0, 0, 0, 0.2);
 	background-color: white;
 	cursor: pointer;
-	transition-property: bow shador;
+	transition-property:bow shador;
 	transition-duration: 0.3s;
-}
+} x
 
 .producto:hover {
 	box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);
 
-}
+} x
 
 .producto>img {
 	width: 100%;
 	object-fit: cover;
-}
+} x
 
 .informacion {
 	border-top: 1px solid rgb(230, 230, 230);
@@ -113,20 +113,20 @@ h2 {
 	display: flex;
 	flex-flow: column;
 
-}
+} x
 
 .informacion *+* {
 	margin-bottom: 0.5em;
-}
+} x
 
 .precio {
 	color: black;
-}
+} x
 
 .descripcion {
 	font-weight: 300;
 	font-size: 0.9em;
-}
+} x
 
 .flex-relacionadas {
 	display: flex;
@@ -134,7 +134,7 @@ h2 {
 	align-items: center;
 	position: relative;
 	padding: 3%;
-}
+} x
 
 .flex {
 	display: flex;
@@ -144,20 +144,20 @@ h2 {
 	background: #ffcd90;
 	padding: 3%;
 	margin: 0;
-}
+} x
 
 form {
 	margin: 0 auto;
 	width: 400px;
 	padding: 1em;
 	border-radius: 1em;
-}
+} x
 
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-}
+} x
 
 form li+li {
 	margin-top: 1%
@@ -167,7 +167,7 @@ label {
 	display: inline-block;
 	width: 90px;
 	text-align: right;
-}
+} x
 
 input,
 textarea {
@@ -175,32 +175,32 @@ textarea {
 	width: 300px;
 	box-sizing: border-box;
 	border: 1px solid #ff7b00;
-}
+} x
 
 
 textarea {
 	vertical-align: top;
 	height: 5em;
-}
+} x
 
 .button {
 	padding-left: 90px;
 	list-style: none;
-}
+} x
 
 button {
 	margin-left: 1%
-}
+} x
 
 button:hover {
 	color: #ff7b00;
-}
+} x
 
 iframe {
 	width: 60%;
 	height: 300px;
 	margin-right: 20px;
-}
+} x
 
 .contactenos{
 	padding: 5%;
@@ -214,11 +214,10 @@ iframe {
 
 .registrarse:hover{
 	background-color: #ff7b00;
-}
+} 
 
-h4{
-	font-weight: bold;
-}
+
+/*--preguntas frecuenteds--*/
 
 
 
@@ -233,27 +232,27 @@ footer {
 	align-items: center;
 	background-color: black;
 	background: #fff4df;
-}
+} x
 
 
 
 .flex-siguenos {
 	margin: 20px;
 	padding: 2%;
-}
+} x
 
 footer ol li {
 	list-style: none;
-}
+} x
 
 footer section ol li a {
 	text-decoration: none;
 	color: black
-}
+} x
 
 footer section ol li a:hover {
 	color: #ff8d21
-}
+} 
 
 /*!CONTACTENOS*/
 .contactenos{
@@ -266,45 +265,45 @@ footer section ol li a:hover {
 
 
 
-/*!---MEDIA QUERY---*/
+/*!---MEDIA QUERY---*/ 
 @media screen and (max-width:450px){
 	body{
 		width: 100%;
-	}
+	} x
 	main{
 		overflow-x: hidden;
-	} 
+	} x
 	.encabezado{
 		display: flex;
 		flex-direction: column-reverse;
 
-	} 
+	} x
 	.mini-logos{
 		display: none
 
-	} 
+	}  x
 	.flex-relacionadas{
 		display: grid;
-	} 
+	} x
 	.flex{
 		display: flex;
 		flex-direction: column;
 		width: auto;
 		height: auto;
-	} 
+	}  x
 	ul{
 		width: auto;
 		height: auto;
-	} 
+	}  x
 
 	.carrusel-promo{
 		align-content: start;
-	} 
+	} x
 	.d-flex{
 		padding: 18%;
 		height: auto;
 		width: auto;
-	} 
+	} x
 
 	.grid-destacados{
 		display: grid;
@@ -313,7 +312,7 @@ footer section ol li a:hover {
 		justify-content: center;
 		gap: 1em;
 		padding: 10%;
-	} 
+	} x
     .flex-relacionadas{
 		display: grid;
 		grid-template-columns: repeat(2,2fr) ;
@@ -321,18 +320,18 @@ footer section ol li a:hover {
 		justify-content: center;
 		gap: 1em;
 		padding: 10%;
-	} 
+	} x
 	footer{
 		display: inline-block;
 		width: 100%;
-	}
+	} x
 	.flex-copy{
 	padding:5%;
 	text-align: center;
-    }
+    } x
 	.flex-siguenos{
 		display: none;
-	}
+	} x
 	.navbar-mobile{
 		position: fixed;
 		left: 0;
@@ -342,7 +341,7 @@ footer section ol li a:hover {
 		z-index: 1001;
 		text-align: center;
 		box-shadow: 0 0 10px rgba(0,0,0,.15);
-	}
+	} x
 	.list-mobile{
 		background: #ff7b00;
 		display: flex;

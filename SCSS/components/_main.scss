@@ -1,0 +1,122 @@
+/*UN SOLO ESTILO DE MAIN PARA TODAS LAS PAGINAS DONDE SE CARGAN PRODUCTOS*/
+.seccion-articulos{
+    background: $color-4;
+    padding: 2%;
+    h2{
+        text-align: center;
+    }
+    .grid-destacados{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 3fr;
+        align-items: center;
+        position: relative;
+        padding: 3%;
+        margin: 10px;
+        gap: 1em;
+        .producto:hover {
+            box-shadow: 0 0 0 1.0em rgba(186, 23, 23, 0.2);
+        
+        } 
+        .producto{
+            max-width: 280px;
+            display: flex;
+            flex-flow: column;
+            border-radius: 6px;
+            box-shadow: 0 0 0.1em rgb( 0, 0, 0.2);
+            background-color: hwb(0 100% 0%);
+            cursor: pointer;
+            transition-property:bow shador;
+            transition-duration: 0.3s;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            .informacion *+* {
+                margin-bottom: 0.5em;
+            } 
+            .informacion{
+                border-top: 1px solid rgb(230, 230, 230);
+                padding: 1em;
+                display: flex;
+                flex-flow: column;
+                .precio{
+                    color: black;
+                }
+                .descripcion{
+                    font-weight: 300;
+                    font-size: 0.9em;
+                }
+                .comprar{
+
+                }
+            }
+        }
+    }
+
+}
+
+/*CONTACTENOS*/
+main{
+	background: #ff8d21;
+    .contactenos{
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .contactenos{
+            input{
+                width: auto;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+/*PREGUNTAS FRECUENTES*/
+main{
+    ul{
+        .pregunta-frecuente{
+            font-size: 20%;
+        }
+    }
+}
+
+/*CUENTA*/
+main{
+    background: #ff8d21;
+    .cuenta{
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        input{
+            width: auto;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+}
+
+/*LIBRO DE QUEJAS*/
+main{
+    background: #ff8d21;
+    .libro{
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        input{
+            width: auto;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+}

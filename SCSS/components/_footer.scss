@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	background: #fff4df;
+    .flex-informacion{
+        margin: 50px;
+        ol{
+            li{
+                list-style: none;
+                a:hover {
+                    color: #ff8d21
+                } 
+                a{
+                    text-decoration: none;
+                    color: black
+                }
+            }
+        }
+    }
+    .flex-copy{
+
+    }
+    .flex-siguenos{
+        margin: 20px;
+        padding: 2%;
+        a{
+            
+        }
+    }
+    .navbar-mobile{
+        visibility: hidden;
+    }
+}
