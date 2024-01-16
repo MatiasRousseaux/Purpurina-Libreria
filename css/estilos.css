@@ -147,7 +147,7 @@ main .flex {
   main .flex h2 {
     text-align: center; }
   main .flex .formulario-mensaje form {
-    margin: 0 auto;
+    margin: 5px;
     width: 400px;
     padding: 1em;
     border-radius: 1em; }
@@ -293,8 +293,6 @@ footer {
   footer .flex-siguenos {
     margin: 20px;
     padding: 2%; }
-  footer .navbar-mobile {
-    visibility: hidden; }
 
 /*MEDIA QUERIES APLICADAS PARA VISTA MOBILE*/
 @media screen and (max-width: 450px) {
@@ -334,6 +332,7 @@ footer {
       height: auto;
       padding-left: 5%; }
       main .flex .formulario-mensaje form ul {
+        margin: 20px;
         width: auto;
         height: auto; }
   footer {
@@ -357,7 +356,7 @@ footer {
 
 /*MQ APLICADA A NAVBAR FIJA PIE DE PAGINA*/
 @media screen and (max-width: 450px) {
-  main .navbar-mobile {
+  footer .navbar-mobile {
     position: fixed;
     left: 0;
     right: 0;
@@ -366,10 +365,14 @@ footer {
     z-index: 1001;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
-    main .navbar-mobile ul {
+    footer .navbar-mobile ul {
       background: #ff7b00;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 100%;
       padding: 20px; } }
+
+@media screen and (min-width: 451px) {
+  footer .navbar-mobile {
+    visibility: hidden; } }

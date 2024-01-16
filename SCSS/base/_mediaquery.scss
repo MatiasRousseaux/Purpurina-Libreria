@@ -63,9 +63,10 @@
             height: auto;
             padding-left: 5%;
 
-            .formulario-mensaje {
+            .formulario-mensaje{
                 form {
                     ul {
+                        margin: 20px;
                         width: auto;
                         height: auto;
                     }
@@ -109,8 +110,8 @@
 
 /*MQ APLICADA A NAVBAR FIJA PIE DE PAGINA*/
 @media screen and (max-width:450px){
-    main{
-        .navbar-mobile {
+    footer{
+        .navbar-mobile{
             position: fixed;
             left: 0;
             right: 0;
@@ -120,7 +121,7 @@
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     
-            ul {
+            ul{
                 background: #ff7b00;
                 display: flex;
                 justify-content: space-between;
@@ -130,4 +131,12 @@
             }
         }
     }
+}
+@media  screen and (min-width:451px) {
+    footer{
+        .navbar-mobile{
+            visibility: hidden;
+        }
+    }
+    
 }
