@@ -19,27 +19,15 @@
         
         } 
         .producto{
-            max-width: 280px;
-            display: flex;
-            flex-flow: column;
-            border-radius: 6px;
-            box-shadow: 0 0 0.1em rgb( 0, 0, 0.2);
-            background-color: hwb(0 100% 0%);
-            cursor: pointer;
-            transition-property:bow shador;
-            transition-duration: 0.3s;
+            @include producto;
             img{
-                width: 100%;
-                object-fit: cover;
+                @include img;
             }
             .informacion *+* {
                 margin-bottom: 0.5em;
             } 
             .informacion{
-                border-top: 1px solid rgb(230, 230, 230);
-                padding: 1em;
-                display: flex;
-                flex-flow: column;
+                @include informacion;
                 .precio{
                     color: black;
                 }

@@ -29,6 +29,7 @@ nav {
 h2 {
   text-align: center; }
 
+/*MIXIM*/
 /*HEADER*/
 header .encabezado {
   display: flex;
@@ -116,7 +117,7 @@ main .Busquedas-Relacionadas {
       flex-flow: column;
       border-radius: 6px;
       box-shadow: 0 0 0.1em black;
-      background-color: hwb(0 100% 0%);
+      background-color: #ffff;
       cursor: pointer;
       transition-property: bow shador;
       transition-duration: 0.3s; }
@@ -206,7 +207,7 @@ main .flex {
       flex-flow: column;
       border-radius: 6px;
       box-shadow: 0 0 0.1em black;
-      background-color: hwb(0 100% 0%);
+      background-color: #ffff;
       cursor: pointer;
       transition-property: bow shador;
       transition-duration: 0.3s; }
